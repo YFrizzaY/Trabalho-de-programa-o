@@ -1,0 +1,93 @@
+<html lang="pt - Brasileiro">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+      #externa {
+        border: 2px solid;
+        padding: 15px;
+      }
+      input {
+        margin: 4px;
+      }
+      body{
+      background-image: url(img/download.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    div{
+        font-size: 20px;
+      }
+      ul{
+        list-style: none;
+        display: flex;
+      }
+      a{
+        color: rgb(131, 14, 14);
+      }
+      button{
+        align-items: center;
+        display: flex;
+        z-index: 9999;
+        width: 100%;
+        height: 8vh;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+     
+    <header>
+      <button
+          <ul>
+           <li><a href="site.html"> HOME </a></li> 
+            <li><a href="tabela.html"> ATORES </a> </li>
+          </ul>
+        </button> 
+      </header>
+    <div id="externa">
+      <h1>Formulário</h1>
+      <form action="forms2.html" method="get" target="_self">
+          <h3> Insira abaixo seus dados</h3>
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Insira o Nome" required="">
+        </div>
+
+        <div>
+          <label for="nome">Data Nascimento</label>
+          <input type="date" id="datanasc" name="datanasc">
+        </div>
+
+          <div>
+              <label for="nome"> E-mail</label>
+              <input type="text" id="nome" name="nome" placeholder="Insira seu e-mail" required="">
+          </div>
+
+          <div>
+            <label for="região">Região</label>
+            <select name="região" id="região">
+                <option value="Norte">Norte</option>
+                <option value="Nordeste">Nordeste</option>
+                <option value="Centro-Oeste">Centro-Oeste</option>
+                <option value="Sudeste">Sudeste</option>
+                <option value="Sul">Sul</option>
+            </select>
+        </div>
+<br>
+        <div>
+            <label for="obs"><h3>Observações</h3></label>
+            <textarea name="obs" id="observacao" cols="30" rows="10" style="height: 179px; width: 497px;"> Relate sua dúvida ou problema</textarea>    
+        </div>
+
+        <div>
+          <button type="submit" name="envio">Enviar</button>
+        </div>
+      </form>
+    </div>
+  
+
+</body>
+</html>
